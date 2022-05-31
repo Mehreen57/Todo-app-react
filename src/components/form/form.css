@@ -1,0 +1,61 @@
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form input{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    outline: none;
+  }
+  form button {
+    color: #ff6f47;
+    background: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+    transition: all 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+
+  
+  /*CUSTOM SELECTOR */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  select{
+   padding: 1.2rem;
+   margin-left: 1rem;
+   border-radius: 6px;
+   cursor: pointer;
+  }
+
+  .select span i{
+    position: relative;
+  }
+  .select span i::before{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    color: #ff6f47;
+  }
