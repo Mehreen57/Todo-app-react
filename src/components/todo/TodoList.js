@@ -12,7 +12,6 @@ const TodoList = ({todos, setTodos, filteredTodo}) =>  {
               todos={todos} 
               setTodos={setTodos}
               text={todo.text}
-
               />
           ))}
         </ul>
