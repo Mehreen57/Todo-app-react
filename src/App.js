@@ -6,13 +6,19 @@ import { Header, Form, TodoList } from './components';
 // get data from local
 const getTodoFromLocal = () => {
   let todoList =  localStorage.getItem('todos');
-  if(todoList === null){
+  if (localStorage.getItem("todos") === null) {
     localStorage.setItem("todos", JSON.stringify([]));
+    return []
   } else {
-     let localTodo = JSON.parse(localStorage.getItem('todos'));
-     return localTodo;
-   }
- }
+    try {
+      let localTodo = localStorage.getItem("todos");
+      let parsedTodo = JSON.parse(localTodo);
+      return parsedTodo;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
 
 const App = () => {
   // states
